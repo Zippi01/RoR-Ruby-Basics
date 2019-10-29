@@ -1,0 +1,17 @@
+GIT
+  remote: https://github.com/Zippi01/put_data
+  revision: 31d13e6667713602b7864c414a8dab64513db014
+  specs:
+    put_data (0.0.0)
+
+GEM
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  put_data!
+
+BUNDLED WITH
+   2.0.1
