@@ -1,0 +1,9 @@
+---
+:name: saasd
+:kind: Dog
+:life: 3
+:eat: 10
+:drink: 10
+:play: 10
+:ws: 10
+:sleep_rate: 10

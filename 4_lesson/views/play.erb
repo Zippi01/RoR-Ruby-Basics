@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+      <title>Tamagochi</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div style="margin-left: 20px; margin-top: 20px;">
+      <form method="post" action="/tamagochi/start/sleep">
+          <div class="badge badge-pill badge-info"> life <%= @life_animal %></div>
+      </form><br>
+      <p class="text-primary"><%= @text_animal %></p>
+      <form method="post" action="/tamagochi/start/eat">
+          <input type="submit" class="btn btn-outline-primary" value="Feed">
+          <%= @eat_food %>
+      </form><br>
+      <form method="post" action="/tamagochi/start/drink">
+          <input type="submit" class="btn btn-outline-secondary" value="Give water">
+          <%= @drink_water %>
+      </form><br>
+      <form method="post" action="/tamagochi/start/play">
+          <input type="submit" class="btn btn-outline-success" value="Play around">
+          <%= @plaing %>
+      </form><br>
+      <form method="post" action="/tamagochi/start/ws">
+          <input type="submit" class="btn btn-outline-danger" value="To build in a toilet">
+          <%= @go_to_the_toilet %>
+      </form><br>
+      <form method="post" action="/tamagochi/start/sleep">
+          <input type="submit" class="btn btn-outline-warning" value="Put to bed">
+          <%= @sleep %>
+      </form><br>
+      <div>
+        <p class="text-primary"><%= @text_life %></p>
+        <p class="text-success"><%= @text %></p>
+        <p class="text-danger"><%= @text_sums %></p>
+        <p class="text-danger"><%= @text_hungry %></p>
+        <p class="text-danger"><%= @text_thirst %></p>
+        <p class="text-danger"><%= @text_toilet %></p>
+        <p class="text-danger"><%= @text_sleep_rate %></p>
+        <p class="text-danger"> <%= @text_ws %></p>
+      </div>
+      <form method="get" action="/">
+          <input type="submit" class="btn btn-danger" value="Delete">
+      </form>
+    </div>
+  </body>
+</html>
